@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+$font-family-sans-serif: 'Poppins', sans-serif;
+
+$primary: #100e17;
+$secondary: #bb86fc;
+$dark: #1e1e25;
+$progress-bar-bg: $secondary;
+$progress-height: 7px;
+$navbar-dark-brand-hover-color: $secondary;
+$input-bg: transparent;
+$input-focus-border-color: $secondary;
+$form-text-color: $secondary;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+html {
+  scroll-behavior: smooth;
+}
+
+
+.project-1{
+  --animate-duration: 0.5s;
+}
+.project-2{
+  --animate-duration: 0.7s;
+}
+.project-3{
+  --animate-duration: 0.9s;
+}
+.project-4{
+  --animate-duration: 1.2s;
+}
+.project-5{
+  --animate-duration: 1.4s;
+}
+.project-6{
+  --animate-duration: 1.6s;
+}
+
+.isotope-section{
+  height: 130vh;
+}
+.test:hover{
+
+  color: white;
+
+}
+.i-photo{
+  border-radius: 50%;
+  transform: rotate(330deg);
+}
+.img-hover {
+  transition: 0.4s;
+}
+
+.portfolio-btn:hover {
+  color: var(--bs-secondary);
+
+}
+.portfolio-btn{
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.portfolio-btn:focus{
+  border:1px solid transparent;
+}
+.img-hover:hover {
+  cursor: pointer;
+  transform: scale(0.98);
+}
+
+.margin {
+  margin-left: 0%;
+}
+
+.margin-left {
+  margin-left: -90%;
+}
+
+.margin-change {
+  margin-left: 198px;
+}
+
+.margin-left-change {
+  margin-left: 0%;
+}
+
+.choose-theme {
+  width: 200px;
+  height: 202px;
+  background-color: black;
+  position: fixed;
+  top: 20%;
+  z-index: 1000;
+  transition: 0.25s;
+
+}
+
+.theme {
+  width: 100%;
+}
+
+.change-theme {
+  position: fixed;
+  top: 20%;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  background-color: #3e3c3c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+
+  transition: 0.3s;
+
+}
+
+.change-theme:hover {
+
+}
+
+.text-color-change {
+  color: white;
+}
+
+.bg-color-change {
+  background-color: var(--bs-dark);
+}
+
+
+///////////////////
+.phone-icon {
+  position: fixed;
+  z-index: 1000;
+  right: 30px;
+  bottom: 30px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: var(--bs-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  //animation: phoneAni 1.5s infinite linear;
+  //transform-origin: revert;
+  //animation-direction: alternate-reverse;
+
+}
+
+@keyframes phoneAni {
+
+  from {
+
+    transform: scale(1.2);
+  }
+  to {
+
+    transform: scale(0.9);
+  }
+
+
+}
+
+
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+  background-color: transparent;
+
+}
+
+.phone-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+  background-color: transparent;
+}
+
+.backdrop {
+  backdrop-filter: blur(50px);
+  background-color: rgba(0, 0, 0, 0.68);
+}
+
+.icon {
+  margin-left: 8.4%;
+}
+
+body {
+  background-color: var(--bs-primary);
+}
+
+p {
+  line-height: 30px;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 5000;
+  width: 100%;
+
+}
+
+.section-video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  z-index: -1;
+
+}
+
+.bgvid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.79);
+}
+
+.profile-img {
+
+  border-radius: 100%;
+}
+
+.profile-img-container {
+  border: 10px solid var(--bs-dark);
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+
+}
+
+.skill-box {
+  border: 1px solid var(--bs-secondary);
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.service-img {
+  width: 120px;
+  height: 120px;
+
+}
+
+.line {
+  width: 80px;
+  height: 3px;
+
+}
+
+.service-card {
+  transition: 0.6s;
+
+}
+
+.service-card:hover {
+  cursor: pointer;
+  border-bottom: 5px solid var(--bs-secondary);
+  transform: translateY(-5px);
+}
+
+.progress-bar {
+  animation-name: animationProgress;
+  animation-duration: 2.5s;
+}
+
+.progress-circle-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.progress-circle-text {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+
+}
+
+.progress-circle-animate {
+  animation-name: animationProgressCircle;
+  animation-duration: 2.5s;
+}
+
+.blog-bg {
+  background-image: url('../assests/img/feature-bg.jpg');
+  background-size: cover;
+}
+
+.client-profile {
+  width: 50px;
+  height: 50px;
+
+}
+
+.review-card {
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.review-card:hover {
+  border: 1px solid var(--bs-secondary);
+  border-radius: 10px;
+
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem 0;
+
+  list-style-type: none;
+
+  li {
+    margin: 0 0.25rem;
+  }
+
+  button {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+
+    border: none;
+    border-radius: 100%;
+    border: 1px solid gray;
+    background-color: transparent;
+
+    text-indent: -9999px;
+  }
+
+  li.slick-active button {
+    background-color: var(--bs-secondary);
+    border: 0px;
+  }
+
+}
+
+.contact-circle {
+  width: 100px;
+  height: 100px;
+  /* height: 30%; */
+  border-radius: 50%;
+  border: 1px solid var(--bs-secondary);
+  text-align: center;
+}
+
+.contact-icon {
+  line-height: 100px;
+}
+
+@keyframes animationProgressCircle {
+  from {
+    stroke-dashoffset: 500%;
+  }
+}
+
+.price-card {
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.price-card:hover {
+  box-shadow: 0 2rem 4rem rgb(0 0 0) !important;
+}
+
+.blog-card {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.blog-card:hover {
+  //border: 1px solid var(--bs-secondary);
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%) !important;
+}
+
+.contact-card {
+  border: 1px solid transparent;
+}
+
+.project {
+  background-image: url("../assests/img/skill-bg.png");
+  background-size: cover;
+}
+
+.project-top-bg {
+  background-color: transparent;
+}
+
+.project-card {
+  transition: 0.6s;
+}
+
+.project-card:hover {
+
+  transform: scale(0.94);
+
+}
+
+
+.button {
+
+  cursor: pointer;
+
+}
+
+.button:active,
+.button.is-checked {
+  border-bottom: 2px solid var(--bs-secondary);
+  color: var(--bs-secondary);
+
+}
+
+/* ---- button-group ---- */
+
+
+/* ---- isotope ---- */
+
+.grid {
+
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+  position: relative;
+  float: left;
+  width: 30%;
+  margin: 5px;
+
+}
+
+.element-item:hover {
+  box-shadow: #0bceaf;
+}
+
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
+
+
+.blog-bg {
+
+}
+
+.contact-bg {
+  background-image: url('../assests/img/map.png');
+
+}
+
+.nav-link {
+
+  font-weight: bold;
+}
+
+.footer-icon {
+  color: white;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+
+.footer-icon:hover {
+  color: var(--bs-secondary);
+  cursor: pointer;
+
+}
+
+.form-check-input {
+  border-color: var(--bs-secondary);
+  background-color: white;
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: var(--bs-secondary);
+  border-color: var(--bs-secondary);
+}
+
+@keyframes animationProgress {
+  from {
+    width: 0%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .isotope-section{
+    height: 100%;
+  }
+  .project {
+
+    background-size: contain;
+  }
+  .main__body .project {
+    background-size: contain;
+  }
+  .profile-img {
+
+    border-radius: 100%;
+  }
+  .profile-img-container {
+    border: 20px solid black;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+
+
+  }
+  .contact-circle {
+    width: 50px;
+    height: 50px;
+    /* height: 30%; */
+    border-radius: 50%;
+    border: 1px solid var(--bs-secondary);
+    text-align: center;
+  }
+  .contact-icon {
+    line-height: 50px;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    margin-left: -100%;
+    z-index: 3000;
+    transition: 0.5s ease-in-out;
+  }
+  .sidebar.open {
+    //margin-left: 0;
+
+    margin-left: 0;
+    width: 100%;
+  }
+
+  //////light mode for phone
+
+
+}
+
+
+//light mode
+
+.main__body {
+  transition: 0.5s !important;
+  color: var(--bs-dark) !important;
+  background-color: white;
+}
+.form-check-input:focus {
+  border-color: rgba(134, 183, 254, 0);
+  outline: 0;
+
+}
+.main__body .section-video {
+  display: none;
+}
+
+.main__body .profile-img-container {
+  border: 10px solid var(--bs-secondary);
+}
+
+.main__body .overlay {
+  background-color: white;
+}
+
+.main__body .text-color-change {
+  color: black;
+}
+
+.main__body .bg-color-change {
+  background-color: white;
+}
+
+.main__body .project {
+
+  background-image: url("../assests/img/skill-light-bg.png");
+  background-size: cover;
+}
+
+.main__body .project-top-bg {
+  background-color: white;
+}
+
+.main__body .contact-card {
+
+  border: 1px solid var(--bs-secondary);
+
+}
+
+.main__body .header {
+
+  background-color: rgba(255, 255, 255, 0.58);
+
+}
+.main__body .test:hover{
+
+
+    color: black;
+
+
+}
+.main__body .price-card:hover {
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%) !important;
+}
+
+.nav-active{
+  background-color: var(--bs-secondary);
+  border-radius: 5px;
+}
+.nav-active .nav-link:hover{
+ color: white;
+}
