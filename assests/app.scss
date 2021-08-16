@@ -13,11 +13,23 @@ $input-focus-border-color: $secondary;
 $form-text-color: $secondary;
 $info: rgb(255 255 255 / 75%);
 $gray: rgb(0 0 0 / 55%);
-
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 html {
   scroll-behavior: smooth;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.img-container:hover .overlay-img {
+  opacity: 1;
 }
 
 .card-img-top {
@@ -228,9 +240,6 @@ html {
   background-color: rgba(0, 0, 0, 0.68);
 }
 
-.icon {
-  margin-left: 8.4%;
-}
 
 body {
   background-color: var(--bs-primary);

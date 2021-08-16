@@ -10751,6 +10751,20 @@ html {
   scroll-behavior: smooth;
 }
 
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.img-container:hover .overlay-img {
+  opacity: 1;
+}
+
 .card-img-top {
   height: 200px;
 }
@@ -10932,10 +10946,6 @@ html {
 .backdrop {
   backdrop-filter: blur(50px);
   background-color: rgba(0, 0, 0, 0.68);
-}
-
-.icon {
-  margin-left: 8.4%;
 }
 
 body {
