@@ -3,7 +3,7 @@
 $font-family-sans-serif: 'Poppins', sans-serif;
 
 $primary: #100e17;
-$secondary: #bb86fc;
+$secondary: #fca821;
 $dark: #1e1e25;
 $progress-bar-bg: $secondary;
 $progress-height: 7px;
@@ -11,45 +11,82 @@ $navbar-dark-brand-hover-color: $secondary;
 $input-bg: transparent;
 $input-focus-border-color: $secondary;
 $form-text-color: $secondary;
-
+$info: rgb(255 255 255 / 75%);
+$gray: rgb(0 0 0 / 55%);
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
 html {
   scroll-behavior: smooth;
 }
 
+.card-img-top {
+  height: 200px;
+}
 
-.project-1{
+.detail-text {
+  color: var(--bs-info);
+}
+
+.detail-text:hover {
+  color: var(--bs-secondary);
+  cursor: pointer;
+}
+
+.menu-close-phone {
+  position: absolute;
+  top: 4px;
+  right: 24px;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #ffffff;
+}
+
+.phone-sidebar {
+  position: relative;
+
+}
+
+.project-1 {
   --animate-duration: 0.5s;
 }
-.project-2{
+
+.project-2 {
   --animate-duration: 0.7s;
 }
-.project-3{
+
+.project-3 {
   --animate-duration: 0.9s;
 }
-.project-4{
+
+.project-4 {
   --animate-duration: 1.2s;
 }
-.project-5{
+
+.project-5 {
   --animate-duration: 1.4s;
 }
-.project-6{
+
+.project-6 {
   --animate-duration: 1.6s;
 }
 
-.isotope-section{
+.isotope-section {
   height: 130vh;
 }
-.test:hover{
+
+.test:hover {
 
   color: white;
 
 }
-.i-photo{
+
+.i-photo {
   border-radius: 50%;
   transform: rotate(330deg);
 }
+
 .img-hover {
   transition: 0.4s;
 }
@@ -58,13 +95,16 @@ html {
   color: var(--bs-secondary);
 
 }
-.portfolio-btn{
+
+.portfolio-btn {
   background-color: transparent;
   border: 1px solid transparent;
 }
-.portfolio-btn:focus{
-  border:1px solid transparent;
+
+.portfolio-btn:focus {
+  border: 1px solid transparent;
 }
+
 .img-hover:hover {
   cursor: pointer;
   transform: scale(0.98);
@@ -137,8 +177,8 @@ html {
   z-index: 1000;
   right: 30px;
   bottom: 30px;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   background-color: var(--bs-secondary);
   display: flex;
@@ -164,7 +204,6 @@ html {
 
 
 }
-
 
 
 .header {
@@ -201,9 +240,6 @@ p {
   line-height: 30px;
 }
 
-.nav-link:hover {
-  color: white;
-}
 
 .header {
   position: fixed;
@@ -272,13 +308,18 @@ p {
 
 .service-card {
   transition: 0.6s;
-
+  border-radius: 10px;
 }
 
 .service-card:hover {
   cursor: pointer;
-  border-bottom: 5px solid var(--bs-secondary);
-  transform: translateY(-5px);
+  background-color: var(--bs-secondary);
+  color: white;
+
+  .aa {
+    background-color: gray;
+    color: white;
+  }
 }
 
 .progress-bar {
@@ -303,11 +344,6 @@ p {
 .progress-circle-animate {
   animation-name: animationProgressCircle;
   animation-duration: 2.5s;
-}
-
-.blog-bg {
-  background-image: url('../assests/img/feature-bg.jpg');
-  background-size: cover;
 }
 
 .client-profile {
@@ -359,7 +395,11 @@ p {
   }
 
 }
+.project {
 
+  background-image: url("../assests/img/map.png");
+  background-size: cover;
+}
 .contact-circle {
   width: 100px;
   height: 100px;
@@ -403,10 +443,6 @@ p {
   border: 1px solid transparent;
 }
 
-.project {
-  background-image: url("../assests/img/skill-bg.png");
-  background-size: cover;
-}
 
 .project-top-bg {
   background-color: transparent;
@@ -476,6 +512,10 @@ p {
 
 }
 
+a:hover {
+  color: var(--bs-secondary);
+}
+
 .contact-bg {
   background-image: url('../assests/img/map.png');
 
@@ -516,7 +556,7 @@ p {
 }
 
 @media screen and (max-width: 769px) {
-  .isotope-section{
+  .isotope-section {
     height: 100%;
   }
   .project {
@@ -557,7 +597,7 @@ p {
 
     margin-left: -100%;
     z-index: 3000;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in;
   }
   .sidebar.open {
     //margin-left: 0;
@@ -579,11 +619,13 @@ p {
   color: var(--bs-dark) !important;
   background-color: white;
 }
+
 .form-check-input:focus {
   border-color: rgba(134, 183, 254, 0);
   outline: 0;
 
 }
+
 .main__body .section-video {
   display: none;
 }
@@ -597,22 +639,15 @@ p {
 }
 
 .main__body .text-color-change {
-  color: black;
+  color: rgba(0, 0, 0, 0.78);
 }
 
 .main__body .bg-color-change {
   background-color: white;
 }
 
-.main__body .project {
 
-  background-image: url("../assests/img/skill-light-bg.png");
-  background-size: cover;
-}
 
-.main__body .project-top-bg {
-  background-color: white;
-}
 
 .main__body .contact-card {
 
@@ -625,21 +660,40 @@ p {
   background-color: rgba(255, 255, 255, 0.58);
 
 }
-.main__body .test:hover{
+
+.main__body .test:hover {
 
 
-    color: black;
+  color: black;
 
 
 }
+
+.main__body .service-card {
+  transition: 0.6s;
+  border-radius: 10px;
+}
+
+.main__body .service-card:hover {
+  cursor: pointer;
+  background-color: var(--bs-secondary);
+  color: white;
+  .aa {
+    background-color: gray;
+    color: white;
+  }
+}
+
 .main__body .price-card:hover {
   box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%) !important;
 }
 
-.nav-active{
+.main__body .detail-text {
+  color: var(--bs-gray);
+}
+
+.nav-active {
   background-color: var(--bs-secondary);
   border-radius: 5px;
-}
-.nav-active .nav-link:hover{
- color: white;
+  color: black;
 }

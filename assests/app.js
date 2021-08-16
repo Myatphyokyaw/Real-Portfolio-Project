@@ -246,7 +246,7 @@ let progress_bar = new Waypoint({
         progress_circle.forEach(el => el.classList.add("progress-circle-animate"))
 
     },
-    offset: '30%'
+    offset: '20%'
 })
 
 
@@ -360,3 +360,4 @@ window.addEventListener("scroll", function () {
         }
     })
 })
+
