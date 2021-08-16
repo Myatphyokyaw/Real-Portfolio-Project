@@ -25,6 +25,9 @@ $(window).on("load", function () {
     })
 })
 
+
+
+
 function light() {
     ab.checked = true;
     document.querySelector('body').classList.add('main__body');
@@ -219,6 +222,7 @@ let headerControl = new Waypoint({
     },
     offset: '90%'
 })
+
 let phone_headerControl = new Waypoint({
     element: document.getElementById('about'),
     handler: function (direction) {
@@ -327,7 +331,7 @@ mode.addEventListener('change', () => {
     }
 });
 
-var wow = new WOW(
+let wow = new WOW(
     {
         boxClass: 'wow',
         animateClass: 'animate__animated',
@@ -360,4 +364,3 @@ window.addEventListener("scroll", function () {
         }
     })
 })
-

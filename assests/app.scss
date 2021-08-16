@@ -13,7 +13,9 @@ $input-focus-border-color: $secondary;
 $form-text-color: $secondary;
 $info: rgb(255 255 255 / 75%);
 $gray: rgb(0 0 0 / 55%);
+$image-bg:$secondary;
 @import "../node_modules/bootstrap/scss/bootstrap";
+
 
 html {
   scroll-behavior: smooth;
@@ -85,7 +87,7 @@ html {
 }
 
 .isotope-section {
-  height: 130vh;
+  height: 170vh;
 }
 
 .test:hover {
@@ -218,15 +220,6 @@ html {
 }
 
 
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 2000;
-  background-color: transparent;
-
-}
-
 .phone-header {
   position: fixed;
   top: 0;
@@ -237,7 +230,7 @@ html {
 
 .backdrop {
   backdrop-filter: blur(50px);
-  background-color: rgba(0, 0, 0, 0.68);
+  background-color: rgba(0 0 0 / 0%);
 }
 
 
@@ -345,11 +338,15 @@ p {
 
 .progress-circle-text {
   position: absolute;
-  top: 35%;
+  top: 37%;
   left: 35%;
 
 }
-
+.progress-circle-text-per{
+  position: absolute;
+  top: 37%;
+  left: 57%;
+}
 .progress-circle-animate {
   animation-name: animationProgressCircle;
   animation-duration: 2.5s;
