@@ -10817,7 +10817,7 @@ html {
 }
 
 .isotope-section {
-  height: 170vh;
+  height: 200vh;
 }
 
 .test:hover {
@@ -11009,13 +11009,12 @@ p {
 
 .service-card {
   transition: 0.6s;
-  border-radius: 10px;
 }
 
 .service-card:hover {
   cursor: pointer;
-  background-color: var(--bs-secondary);
-  color: white;
+  border-bottom: 5px solid var(--bs-secondary);
+  transform: translateY(-5px);
 }
 .service-card:hover .aa {
   background-color: gray;
@@ -11098,16 +11097,15 @@ p {
 }
 
 .contact-circle {
-  width: 100px;
-  height: 100px;
-  /* height: 30%; */
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   border: 1px solid var(--bs-secondary);
   text-align: center;
 }
 
 .contact-icon {
-  line-height: 100px;
+  line-height: 70px;
 }
 
 @keyframes animationProgressCircle {
@@ -11155,7 +11153,6 @@ p {
 
 .button:active,
 .button.is-checked {
-  border-bottom: 2px solid var(--bs-secondary);
   color: var(--bs-secondary);
 }
 
@@ -11316,21 +11313,6 @@ a:hover {
 
 .main__body .test:hover {
   color: black;
-}
-
-.main__body .service-card {
-  transition: 0.6s;
-  border-radius: 10px;
-}
-
-.main__body .service-card:hover {
-  cursor: pointer;
-  background-color: var(--bs-secondary);
-  color: white;
-}
-.main__body .service-card:hover .aa {
-  background-color: gray;
-  color: white;
 }
 
 .main__body .price-card:hover {
