@@ -18,12 +18,7 @@ const progress = document.querySelectorAll(".bar")
 const progress_circle = document.querySelectorAll(".progress-circle")
 
 
-$(window).on("load", function () {
 
-    $('.loader-container').fadeOut(500, function () {
-        $(this).remove();
-    })
-})
 
 
 
@@ -40,6 +35,7 @@ function light() {
     choose.classList.toggle("margin")
     change.classList.toggle("margin-left-change")
     change.classList.toggle("margin-change")
+    playSound();
 
 
 }
@@ -57,6 +53,7 @@ function dark() {
     choose.classList.toggle("margin")
     change.classList.toggle("margin-left-change")
     change.classList.toggle("margin-change")
+    playSound();
 
 
 }
@@ -283,6 +280,7 @@ function closemenu() {
 }
 
 window.addEventListener("load", function () {
+
     if (localStorage.getItem('data-theme') == 'dark') {
         document.querySelector('body').classList.remove('main__body');
         ab.checked = false;
@@ -301,6 +299,7 @@ window.addEventListener("load", function () {
 })
 
 mode.addEventListener('change', () => {
+    playSound();
     if (localStorage.getItem('data-theme') == 'dark') {
 
         localStorage.setItem("data-theme", "light");
@@ -314,7 +313,6 @@ mode.addEventListener('change', () => {
 
 
 
-
     } else {
 
         localStorage.setItem("data-theme", "dark");
@@ -325,6 +323,7 @@ mode.addEventListener('change', () => {
         moon.classList.remove("d-block")
         moon.classList.add("d-block")
         sun.classList.add("d-none")
+
 
 
     }

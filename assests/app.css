@@ -10751,6 +10751,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.svg {
+  width: 350px;
+}
+
 .text {
   color: white;
   font-size: 20px;
@@ -10826,7 +10830,6 @@ html {
 
 .i-photo {
   border-radius: 50%;
-  transform: rotate(330deg);
 }
 
 .img-hover {
@@ -11222,6 +11225,10 @@ a:hover {
   }
 }
 @media screen and (max-width: 769px) {
+  .svg {
+    width: 300px;
+  }
+
   .isotope-section {
     height: 100%;
   }
