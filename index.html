@@ -3,9 +3,6 @@
 <div class="loader-container " style="z-index: 10000">
 
     <div class="loader"></div>
-    <audio id="musicplayer" autoplay>
-        <source src="assests/img/welcome.mp3">
-    </audio>
 </div>
 
 <html lang="en">
@@ -820,11 +817,14 @@
                                 <img src="assests/img/port2.png" class="img-fluid" style="border-radius: 7px" alt="">
 
                             </a>
+
                             <a href="#" class="element-item  transition mockup "
                                data-category="transition">
-                                <img src="assests/img/port3.png" class="img-fluid" style="border-radius: 7px" alt="">
+                                <img src="assests/img/portfolio5.png" class="img-fluid" style="border-radius: 7px"
+                                     alt="">
 
                             </a>
+
                             <a href="#" class="element-item  transition mockup "
                                data-category="transition">
                                 <img src="assests/img/portfolio3.png" class="img-fluid" style="border-radius: 7px"
@@ -832,24 +832,25 @@
 
                             </a>
 
-                            <a href="#" class="element-item transition mockup "
+                            <a href="#" class="element-item  transition mockup "
                                data-category="transition">
-                                <img src="assests/img/portfolio13.jpg" class="img-fluid" style="border-radius: 7px"
+                                <img src="assests/img/portfolio8.png" class="img-fluid" style="border-radius: 7px"
                                      alt="">
 
                             </a>
-                            <a href="#" class="element-item transition mockup "
+                            <a href="#" class="element-item  transition mockup "
                                data-category="transition">
-                                <img src="assests/img/portfolio14.jpg" class="img-fluid" style="border-radius: 7px"
+                                <img src="assests/img/portfolio2.png" class="img-fluid" style="border-radius: 7px"
                                      alt="">
 
                             </a>
-                            <a href="#" class="element-item transition mockup "
+                            <a href="#" class="element-item  transition mockup "
                                data-category="transition">
-                                <img src="assests/img/portfolio15.jpg" class="img-fluid" style="border-radius: 7px"
+                                <img src="assests/img/portfolio4.png" class="img-fluid" style="border-radius: 7px"
                                      alt="">
 
                             </a>
+
 
 
                         </div>
@@ -1412,7 +1413,7 @@
 <script src="assests/app.js"></script>
 <script>
     function playSound() {
-        let audio = new Audio("assests/img/click.wav");
+        let audio = new Audio("assests/sound/click.wav");
         audio.play();
     }
 
@@ -1422,14 +1423,7 @@
         $('.loader-container').fadeOut(500, function () {
 
             $(this).remove();
-            let source = "assests/img/welcome.mp3"
-            let audio = document.createElement("audio");
-            audio.autoplay = true;
-            audio.load()
-            audio.addEventListener("load", function () {
-                audio.play();
-            }, true);
-            audio.src = source;
+
         })
 
     })
