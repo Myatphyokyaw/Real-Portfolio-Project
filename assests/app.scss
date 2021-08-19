@@ -561,10 +561,21 @@ a:hover {
     width: 0%;
   }
 }
+@media screen and (max-width: 1025px) {
+.isotope-section{
+  height: 100%;
+}
+}
+@media screen and (max-width: 1367px){
+  .isotope-section{
+    height: 100%;
+  }
 
+}
 @media screen and (max-width: 769px) {
   .svg{
-    width: 300px;
+    width: 200px;
+    margin-top: 35px;
   }
   .isotope-section {
     height: 100%;
