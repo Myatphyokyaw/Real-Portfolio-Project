@@ -37,7 +37,6 @@ function light() {
     change.classList.toggle("margin-change")
     playSound();
 
-
 }
 
 function dark() {
@@ -349,7 +348,7 @@ window.addEventListener("scroll", function () {
 
         let sectionTop = sections.offsetTop;
         let sectionHeight = sections.clientHeight;
-        if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+        if (pageYOffset >= (sectionTop - sectionHeight / 1)) {
             current = sections.getAttribute('id');
 
         }
